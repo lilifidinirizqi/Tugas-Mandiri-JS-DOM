@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main class="todo-card">
+
+            <header class="header">
+                <p class="label">DAILY PLANNER</p>
+
+                <h1>My Daily Tasks</h1>
+
+                <p class="subtitle">
+                    Plan it. Do it. Own your day.
+                </p>
+            </header>
+
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="inputTugas"
+                    placeholder="Tambahkan tugas baru..."
+                    autocomplete="off"
+                >
+
+                <button id="btnTambah">
+                    Tambah
+                </button>
+
+            </div>
+
+
+            <p id="pesanPeringatan" class="warning"></p>
+
+
+            <section class="statistik">
+
+                <div class="stat-card">
+                    <span>Total</span>
+                    <strong id="totalTugas">0</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Selesai</span>
+                    <strong id="tugasSelesai">0</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Belum Selesai</span>
+                    <strong id="tugasBelum">0</strong>
+                </div>
+
+            </section>
+
+
+            <section class="bagian-tugas">
+
+                <div class="judul-daftar">
+                    <h2>Daftar Tugas</h2>
+                </div>
+
+                <ul id="daftarTugas"></ul>
+
+                <p id="pesanKosong">
+                    Belum ada tugas. Tambahkan tugas pertamamu.
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>Personal To-Do List</p>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #171B3A;
+    --navy-muda: #354361;
+    --burgundy: #48121D;
+    --wine: #8D2935;
+    --cream: #F3F1ED;
+    --putih: #FFFFFF;
+    --teks: #24263A;
+    --abu: #777786;
+    --garis: #DDD9D4;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--cream);
+    color: var(--teks);
+}
+
+.container {
+    min-height: 100vh;
+    padding: 40px 20px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--navy),
+            var(--burgundy)
+        );
+}
+
+.todo-card {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    padding: 40px;
+
+    background-color: var(--cream);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.label {
+    color: var(--wine);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: var(--navy);
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--abu);
+
+    font-size: 15px;
+}
+
+
+/* INPUT */
+
+.input-area {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 8px;
+
+    background-color: var(--putih);
+
+    border: 1px solid var(--garis);
+    border-radius: 14px;
+
+    margin-bottom: 10px;
+}
+
+.input-area input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    padding: 12px;
+
+    background-color: transparent;
+
+    color: var(--teks);
+
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.input-area input::placeholder {
+    color: var(--abu);
+}
+
+#btnTambah {
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    background-color: var(--burgundy);
+    color: var(--putih);
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#btnTambah:hover {
+    background-color: var(--wine);
+}
+
+.warning {
+    min-height: 20px;
+
+    margin: 8px 5px 20px;
+
+    color: var(--wine);
+
+    font-size: 13px;
+}
+
+.statistik {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    text-align: center;
+
+    padding: 18px 10px;
+
+    background-color: var(--putih);
+
+    border: 1px solid var(--garis);
+    border-radius: 14px;
+}
+
+.stat-card span {
+    display: block;
+
+    color: var(--abu);
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.stat-card strong {
+    color: var(--navy);
+
+    font-size: 24px;
+}
+
+.bagian-tugas {
+    margin-top: 10px;
+}
+
+.judul-daftar {
+    margin-bottom: 15px;
+}
+
+.judul-daftar h2 {
+    color: var(--navy);
+
+    font-size: 21px;
+}
+
+#daftarTugas {
+    list-style: none;
+}
+
+#daftarTugas li {
+    display: flex;
+
+    align-items: center;
+
+    background-color: var(--putih);
+
+    padding: 15px 18px;
+
+    margin-bottom: 10px;
+
+    border-left: 4px solid var(--wine);
+
+    border-radius: 10px;
+
+    color: var(--teks);
+
+    transition: 0.2s;
+}
+
+#daftarTugas li:hover {
+    transform: translateX(3px);
+
+    border-left-color: var(--burgundy);
+}
+
+#daftarTugas li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+
+    margin-right: 12px;
+
+    accent-color: var(--burgundy);
+
+    cursor: pointer;
+}
+
+#daftarTugas li span {
+    flex: 1;
+
+    margin-right: 15px;
+}
+
+#daftarTugas li.completed {
+    color: var(--abu);
+}
+
+#daftarTugas li.completed span {
+    text-decoration: line-through;
+}
+
+#daftarTugas li button {
+    border: none;
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    background-color: var(--burgundy);
+    color: var(--putih);
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+#daftarTugas li button:hover {
+    background-color: var(--wine);
+}
+
+#pesanKosong {
+    text-align: center;
+
+    color: var(--abu);
+
+    font-size: 14px;
+
+    padding: 25px 10px;
+}
+
+.footer {
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 13px;
+
+    margin-top: 20px;
+}
+
+
